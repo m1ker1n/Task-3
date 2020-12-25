@@ -34,12 +34,6 @@ typedef struct menu_t {
 	window_t* lastWindow;
 }menu_t;
 
-//SystemOpen();
-//SystemClose();
-//MENU* SystemInit(char* fileName);
-//void SystemRelease(MENU* menu);
-//char* SystemUpdate();
-
 //add elem after last elem of list of windows
 void AddWindow(menu_t* menu);
 //add elem after last elem of list of buttons
