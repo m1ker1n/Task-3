@@ -1,6 +1,5 @@
 #pragma once
 #include "my_system.h"
-#include "active.h"
 
 void InitWindow(HWND hwnd);
 
