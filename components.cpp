@@ -58,10 +58,10 @@ BSets* GetButtonSets(int left, int top, int right, int bottom, COLORREF color, c
 	sets->color = color;
 	sets->highlightColor = highlightColor;
 	sets->name = name;
-	sets->left = left;
-	sets->top = top;
-	sets->right = right;
-	sets->bottom = bottom;
+	sets->rect.left = left;
+	sets->rect.top = top;
+	sets->rect.right = right;
+	sets->rect.bottom = bottom;
 	return sets;
 }
 
@@ -70,10 +70,10 @@ WSets* GetWindowSets(int left, int top, int right, int bottom, COLORREF color) {
 	if (!sets)
 		abort();
 	sets->color = color;
-	sets->left = left;
-	sets->top = top;
-	sets->right = right;
-	sets->bottom = bottom;
+	sets->rect.left = left;
+	sets->rect.top = top;
+	sets->rect.right = right;
+	sets->rect.bottom = bottom;
 	return sets;
 }
 
