@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include "components.h"
 #include "my_graphics.h"
-#include "active.h"
 
 typedef enum {
 	ENTER,
