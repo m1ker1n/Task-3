@@ -1,4 +1,4 @@
-﻿// WindowsProject1.cpp : Определяет точку входа для приложения.
+// WindowsProject1.cpp : Определяет точку входа для приложения.
 //
 
 #include "framework.h"
