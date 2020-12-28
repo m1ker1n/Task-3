@@ -4,7 +4,7 @@
 
 
 typedef struct buttonSettings_t {
-	int left, top, right, bottom;
+	RECT rect;
 	COLORREF color;
 	COLORREF highlightColor;
 	char* name;
@@ -17,7 +17,7 @@ typedef struct button_t {
 }button_t;
 
 typedef struct windowSettings_t {
-	int left, top, right, bottom;
+	RECT rect;
 	COLORREF color;
 }windowSettings_t, WSets;
 
@@ -34,9 +34,12 @@ typedef struct menu_t {
 	window_t* lastWindow;
 }menu_t;
 
-//add elem after last elem of list of windows
+typedef struct activeComponent {
+	window_t* window;
+	button_t* button;
+} activeComponent;
+
 void AddWindow(menu_t* menu);
-//add elem after last elem of list of buttons
 void AddButton(window_t* window);
 
 void LoadWindowSets(window_t* window, WSets* sets);
