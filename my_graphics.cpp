@@ -67,9 +67,9 @@ void DrawButton(HDC hdc,button_t* button, int isActive) {
 	else
 		hBrush = CreateSolidBrush(sets->highlightColor);
 	SelectObject(hdc, hBrush);
-	Rectangle(hdc, sets->left, sets->top, sets->right, sets->bottom);
+	Rectangle(hdc, sets->rect.left, sets->rect.top, sets->rect.right, sets->rect.bottom);
 
-	TextOutA(hdc, sets->left+5, sets->top+5, sets->name, strlen(sets->name));
+	TextOutA(hdc, sets->rect.left+5, sets->rect.top+5, sets->name, strlen(sets->name));
 }
 
 void DrawWindow(HDC hdc, window_t* window) {
@@ -77,5 +77,5 @@ void DrawWindow(HDC hdc, window_t* window) {
 	WSets* sets = window->sets;
 	hBrush=CreateSolidBrush(sets->color);
 	SelectObject(hdc, hBrush);
-	Rectangle(hdc, sets->left, sets->top, sets->right, sets->bottom);
+	Rectangle(hdc, sets->rect.left, sets->rect.top, sets->rect.right, sets->rect.bottom);
 }
