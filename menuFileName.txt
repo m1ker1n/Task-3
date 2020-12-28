@@ -1,0 +1,119 @@
+Example1: Window1: Play, Settings, Exit; Window2: Volume, Save, Back; ActiveWindow overlaps the other
+MenuBegin
+	WindowBegin
+		[WindowSettings]
+		Rectangle = (0,0,600,300)
+		Color = (0,0,0)
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (20,20,180,280)
+			Color = (255,0,0)
+			Name = Play
+			HighlightColor = (0,255,0)
+		ButtonEnd
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (220,20,380,280)
+			Color = (255,0,0)
+			Name = Settings
+			HighlightColor = (0,255,0)
+		ButtonEnd
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (420,20,580,280)
+			Color = (255,0,0)
+			Name = Exit
+			HighlightColor = (0,255,0)
+		ButtonEnd
+	WindowEnd
+	WindowBegin
+		[WindowSettings]
+		Rectangle = (10,10,590,290)
+		Color = (0,100,0)
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (20,20,180,280)
+			Color = (255,0,0)
+			Name = Volume
+			HighlightColor = (0,255,0)
+		ButtonEnd
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (220,20,380,280)
+			Color = (255,0,0)
+			Name = Save
+			HighlightColor = (0,255,0)
+		ButtonEnd
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (420,20,580,280)
+			Color = (255,0,0)
+			Name = Back
+			HighlightColor = (0,255,0)
+		ButtonEnd
+	WindowEnd
+MenuEnd
+
+
+Example2:
+MenuBegin
+	WindowBegin
+		[WindowSettings]
+		Rectangle = (100,100, 200, 200)
+		Color = (255,255,255)
+		ButtonBegin
+		[ButtonSettings]
+			Rectangle = (110,110,190,140)
+			Color = (0,0,0)
+			Name = Button1
+			HighlightColor = (255,200,255)
+		ButtonEnd
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (110,160,190,190)
+			Color = (0,0,0)
+			Name = Button2
+			HighlightColor = (255,255,200)
+		ButtonEnd
+	WindowEnd
+	WindowBegin
+		[WindowSettings]
+		Rectangle = (300,300, 400, 400)
+		Color = (255,255,255)
+		ButtonBegin
+		[ButtonSettings]
+			Rectangle = (310,310,390,340)
+			Color = (0,0,0)
+			Name = Button1
+			HighlightColor = (255,200,255)
+		ButtonEnd
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (310,360,390,390)
+			Color = (0,0,0)
+			Name = Button2
+			HighlightColor = (255,255,200)
+		ButtonEnd
+	WindowEnd
+MenuEnd
+
+// Template
+MenuBegin
+	WindowBegin
+		[WindowSettings]
+		Rectangle = (left,top,right,bottom)
+		Color = (R,G,B)
+		ButtonBegin
+			[ButtonSettings]
+			Rectangle = (left,top,right,bottom)
+			Color = (R,G,B)
+			Name = name
+			HighlightColor = (R,G,B)
+		ButtonEnd
+	WindowEnd
+MenuEnd
+
+
+
+
+
