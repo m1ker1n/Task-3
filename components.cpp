@@ -103,4 +103,3 @@ void ReleaseButtons(window_t* window) {
 		free(temp);
 	}
 }
-
